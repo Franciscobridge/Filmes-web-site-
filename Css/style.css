@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --primary-color: #0D253F;
+    --second-color: #Fdfdfd;
+    --global-color: #FFF;
+    --gry-color: #00000080;
+}
+body{
+    font-size: 1.5rem;
+    font-family: Sans-Serif;
+    font-size: 1.5rem;
+    background: #FEFEFE;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    background: var(--primary-color);
+    color: var(--global-color);
+}
+header span{
+    font-size: 2rem;
+}
+
+section#filmes {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+    padding-inline: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.card{
+    width: 100%;
+    height: 15rem;
+    background: var(--global-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #00000060;
+    display: flex;
+    overflow: hidden;
+    gap: 1.5rem;
+    -justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 10rem;
+    height: 15rem;
+    position: start;
+}
+.card .textCard{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    padding-block: 1rem;
+    gap: 1rem;
+}
+.textCard p{
+    padding: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: auto;
+    -background: red;
+    height: 8rem;
+    color: var(--gry-color);
+    text-align: start;
+}
